@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         List<Person> personList = Arrays.asList(new Person (12L, "Robak"),
                 new Person(11L, "Kwant"),
+                new Person(14L, "Nowak"),
                 new Person(9L, "Kosmos"));
 
        Collections.sort(personList, new Comparator<Person>()
