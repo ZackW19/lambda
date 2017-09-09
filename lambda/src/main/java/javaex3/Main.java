@@ -9,7 +9,13 @@ public class Main {
                 new Person(14L, "Nowak"),
                 new Person(9L, "Kosmos"));
 
-       Collections.sort(personList, new Comparator<Person>()
+
+        //To samo z lambdą
+        Collections.sort(personList, (p2, p1) -> p2.getUsername().compareTo(p1.getUsername()) );
+
+
+        //sortowanie bez lambdy
+        /* Collections.sort(personList, new Comparator<Person>()
 
        {
           @Override
@@ -19,6 +25,7 @@ public class Main {
            }
 
        });
+       */
         System.out.println(personList);
        }
 }
